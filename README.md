@@ -11,4 +11,4 @@ We will try to build a machine learning model to accurately predict whether or n
 The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
 # Result
-The model created as a result of XGBoost hyperparameter optimization became the model with the lowest Cross Validation Score value. (0.90
+The model created as a result of XGBoost hyperparameter optimization became the model with the highest Cross Validation Score value. (0.90)
