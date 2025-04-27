@@ -1,46 +1,14 @@
-# Iris Flower Classification Project
+# Diabetes Prediction using Machine Learning
+ 
+Diabetes, is a group of metabolic disorders in which there are high blood sugar levels over a prolonged period. Symptoms of high blood sugar include frequent urination, increased thirst, and increased hunger. If left untreated, diabetes can cause many complications. Acute complications can include diabetic ketoacidosis, hyperosmolar hyperglycemic state, or death. Serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, and damage to the eyes.
 
-## Overview
-This project is a machine learning model designed to classify the species of Iris flowers based on their sepal and petal measurements. The dataset contains measurements for three species of Iris flowers: **Iris-setosa**, **Iris-versicolor**, and **Iris-virginica**. Using these measurements, the model predicts the species with high accuracy.
-
-## Features
-The dataset contains the following features:
-- **Sepal Length (cm)**
-- **Sepal Width (cm)**
-- **Petal Length (cm)**
-- **Petal Width (cm)**
+This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.
 
 ## Objective
-The objective of this project is to train a machine learning model that:
-1. Understands the relationships between the features.
-2. Accurately predicts the species of Iris flowers based on new data.
+We will try to build a machine learning model to accurately predict whether or not the patients in the dataset have diabetes or not?
 
-## Steps in the Project
-1. **Data Preprocessing**
-   - Cleaned and encoded the dataset.
-   - Split the data into training and testing sets.
+### Details about the dataset
+The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
-2. **Exploratory Data Analysis (EDA)**
-   - Visualized relationships between features using pair plots and heatmaps.
-
-3. **Model Training**
-   - Trained a **Random Forest Classifier** on the training data.
-
-4. **Model Evaluation**
-   - Evaluated the model's performance using metrics such as accuracy, precision, recall, and F1-score.
-
-5. **Hyperparameter Tuning**
-   - Used grid search to optimize model parameters.
-
-6. **Model Deployment**
-   - Saved the trained model using `joblib` for later use.
-
-## Technologies Used
-- **Python**: Programming language.
-- **Libraries**:
-  - `pandas` for data manipulation.
-  - `numpy` for numerical operations.
-  - `seaborn` and `matplotlib` for data visualization.
-  - `scikit-learn` for machine learning.
-  - `joblib` for saving and loading the model.
-
+# Result
+The model created as a result of XGBoost hyperparameter optimization became the model with the lowest Cross Validation Score value. (0.90
